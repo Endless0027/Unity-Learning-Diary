@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//关卡切换
 public class Finish : MonoBehaviour
 {
     private AudioSource finishSound;
