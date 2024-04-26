@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//鍒囪嚦缁撴潫鐣岄潰
 public class Finish2 : MonoBehaviour
 {
     private AudioSource finishSound;
@@ -25,7 +25,7 @@ public class Finish2 : MonoBehaviour
 
     private void CompleteLevel()
     {
-        // 加载名为 "EndScene" 的场景
+        // 录脫脭脴脙没脦陋 "EndScene" 碌脛鲁隆戮掳
         SceneManager.LoadScene("End");
     }
 }
