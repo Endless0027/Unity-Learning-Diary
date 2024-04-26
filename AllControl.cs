@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//这里创建一个可以重置收集进度的方法
 public class AllControl : MonoBehaviour
 {
     public class GameManager
