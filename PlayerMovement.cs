@@ -10,8 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator anim;
     private float dirx = 0f;
-    private int jumpCount = 0; // µ±Ç°Á¬Ìø´ÎÊı
-    private int maxJumpCount = 2; // ×î´óÁ¬Ìø´ÎÊı
+    private int jumpCount = 0; // å½“å‰è¿è·³æ¬¡æ•°
+    private int maxJumpCount = 2; // æœ€å¤§è¿è·³æ¬¡æ•°....æœ‰é—®é¢˜..
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 7f;
@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         dirx = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirx * moveSpeed, rb.velocity.y); // ÉèÖÃË®Æ½·½ÏòËÙ¶È
+        rb.velocity = new Vector2(dirx * moveSpeed, rb.velocity.y); // è®¾ç½®æ°´å¹³æ–¹å‘é€Ÿåº¦
 
     }
 
@@ -46,12 +46,12 @@ public class PlayerMovement : MonoBehaviour
             jumpCount++;
             if (jumpCount >= maxJumpCount)
             {
-                jumpCount = 0; // ÖØÖÃÁ¬Ìø´ÎÊı
+                jumpCount = 0; // é‡ç½®è¿è·³æ¬¡æ•°
             }
         }
         UpdateAnimationState();
     }
-
+//å¼€å§‹è¿æ¥åŠ¨ç”»å’¯...
     private void UpdateAnimationState()
     {
         MovementState state;
